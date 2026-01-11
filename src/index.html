@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpDesk</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="btn btn-primary" id="add-ticket-btn">Добавить тикет</button>
+        </div>
+        <div class="ticket-list" id="ticket-list"></div>
+    </div>
+
+    <div class="modal-overlay" id="ticket-modal">
+        <div class="modal">
+            <h3 class="modal-title" id="modal-title">Добавить тикет</h3>
+            <form id="ticket-form">
+                <div class="form-group">
+                    <label class="form-label">Краткое описание</label>
+                    <input type="text" class="form-input" id="ticket-name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Подробное описание</label>
+                    <textarea class="form-textarea" id="ticket-description" rows="4"></textarea>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn" id="modal-cancel">Отмена</button>
+                    <button type="submit" class="btn btn-primary">ОК</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="delete-modal">
+        <div class="modal">
+            <h3 class="modal-title">Удалить тикет?</h3>
+            <p>Вы уверены, что хотите удалить этот тикет? Это действие нельзя отменить.</p>
+            <div class="modal-actions">
+                <button type="button" class="btn" id="delete-cancel">Отмена</button>
+                <button type="button" class="btn btn-primary" id="delete-confirm">ОК</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
