@@ -4,9 +4,5 @@
 
 ### [OPEN APP](https://seba69xxx.github.io/ahj-helpdesk/)
 
-
-
-\*\*Запуск сервера:\*\*
-
+**Запуск сервера:**
 `cd backend` -> `node server.js`
-
